@@ -1,0 +1,11 @@
+---
+apiVersion: "tinkerbell.org/v1alpha1"
+kind: Workflow
+metadata:
+  name: copypasta-playground-workflow
+  namespace: tink-system
+spec:
+  templateRef: ubuntu
+  hardwareRef: nuc2
+  hardwareMap:
+    device_1: 58:47:ca:74:c8:8a
