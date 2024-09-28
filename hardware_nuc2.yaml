@@ -1,0 +1,34 @@
+---
+apiVersion: tinkerbell.org/v1alpha1
+kind: Hardware
+metadata:
+  name: nuc2
+  namespace: tink-system
+spec:
+  metadata:
+    instance:
+      hostname: "nuc2"
+      operating_system:
+        distro: "ubuntu"
+        os_slug: "ubuntu_20_04"
+        version: "20.04"
+  disks:
+  - device: /dev/nvme0n1p4
+  interfaces:
+  - dhcp: 
+      arch: x86_64
+      hostname: nuc2
+      ip:
+        address: 192.168.1.10
+        gateway: 192.168.1.254
+        netmask: 255.255.255.0
+      lease_time: 86400
+      mac: 58:47:ca:74:c8:8a
+      name_servers:
+      - 172.16.1.11
+      - 172.16.1.12
+      uefi: false
+    netboot:
+      allowPXE: true
+      allowWorkflow: true
+
