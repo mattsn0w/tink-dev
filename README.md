@@ -1,6 +1,6 @@
 # Summary - (draft)
 These are the steps I used to deploy a working Tinkerbell stack on Kubernetes to manage bare metal machine imaging.  
-Issues and gotchas captured along the way.  
+Issues and gotchas captured along the way.  Also added to https://github.com/mattsn0w/tinkerbell.org/blob/main/content/docs/operations/troubleshooting.md for contributing back to documentation.  
 
 ## Host preparating
 ### The Hardware
@@ -79,4 +79,4 @@ A Task is a collection of Actions executed sequentially on a specific worker.
 * https://tinkerbell.org/docs/concepts/hardware/
 * https://docs.k3s.io/cli/server
 * https://docs.k3s.io/installation/configuration
-*  - forked to 
+* 
